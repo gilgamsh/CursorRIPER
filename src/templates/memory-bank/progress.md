@@ -1,10 +1,10 @@
-# Progress Tracker: [PROJECT_NAME]
-*Version: 1.0*
-*Created: [CURRENT_DATE]*
-*Last Updated: [CURRENT_DATE]*
+# 进度跟踪器：[项目名称]
+*版本：1.0*
+*创建日期：[当前日期]*
+*最后更新：[当前日期]*
 
-## Project Status
-Overall Completion: [PERCENTAGE]%
+## 项目状态
+总体完成度：[百分比]%
 
 ```mermaid
 ---
@@ -12,37 +12,37 @@ config:
   theme: neo-dark
 ---
 pie
-    title Project Completion
-    "Completed" : 70
-    "In Progress" : 20
-    "Not Started" : 10
+    title 项目完成度
+    "已完成" : 70
+    "进行中" : 20
+    "未开始" : 10
 ```
 
-## What Works
-- [FEATURE_1]: [COMPLETION_STATUS] - [NOTES]
-- [FEATURE_2]: [COMPLETION_STATUS] - [NOTES]
-- [FEATURE_3]: [COMPLETION_STATUS] - [NOTES]
+## 已完成功能
+- [功能_1]：[完成状态] - [注释]
+- [功能_2]：[完成状态] - [注释]
+- [功能_3]：[完成状态] - [注释]
 
-## What's In Progress
-- [FEATURE_4]: [PROGRESS_PERCENTAGE]% - [NOTES]
-- [FEATURE_5]: [PROGRESS_PERCENTAGE]% - [NOTES]
-- [FEATURE_6]: [PROGRESS_PERCENTAGE]% - [NOTES]
+## 进行中功能
+- [功能_4]：[进度百分比]% - [注释]
+- [功能_5]：[进度百分比]% - [注释]
+- [功能_6]：[进度百分比]% - [注释]
 
-## What's Left To Build
-- [FEATURE_7]: [PRIORITY] - [NOTES]
-- [FEATURE_8]: [PRIORITY] - [NOTES]
-- [FEATURE_9]: [PRIORITY] - [NOTES]
+## 待构建功能
+- [功能_7]：[优先级] - [注释]
+- [功能_8]：[优先级] - [注释]
+- [功能_9]：[优先级] - [注释]
 
-## Known Issues
-- [ISSUE_1]: [SEVERITY] - [DESCRIPTION] - [STATUS]
-- [ISSUE_2]: [SEVERITY] - [DESCRIPTION] - [STATUS]
-- [ISSUE_3]: [SEVERITY] - [DESCRIPTION] - [STATUS]
+## 已知问题
+- [问题_1]：[严重程度] - [描述] - [状态]
+- [问题_2]：[严重程度] - [描述] - [状态]
+- [问题_3]：[严重程度] - [描述] - [状态]
 
-## Milestones
-- [MILESTONE_1]: [DUE_DATE] - [STATUS]
-- [MILESTONE_2]: [DUE_DATE] - [STATUS]
-- [MILESTONE_3]: [DUE_DATE] - [STATUS]
+## 里程碑
+- [里程碑_1]：[截止日期] - [状态]
+- [里程碑_2]：[截止日期] - [状态]
+- [里程碑_3]：[截止日期] - [状态]
 
 ---
 
-*This document tracks what works, what's in progress, and what's left to build.*
+*此文档跟踪已完成功能、进行中功能和待构建功能。* 

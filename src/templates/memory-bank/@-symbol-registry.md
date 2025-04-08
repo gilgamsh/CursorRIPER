@@ -1,100 +1,100 @@
-# @ Symbol Registry: [PROJECT_NAME]
-*Version: 1.0*
-*Created: [CURRENT_DATE]*
-*Last Updated: [CURRENT_DATE]*
+# @符号注册表：[项目名称]
+*版本：1.0*
+*创建日期：[当前日期]*
+*最后更新：[当前日期]*
 
-## Purpose
-This registry documents all significant @ symbols for the project, providing quick access to important files, folders, code, and documentation.
+## 目的
+此注册表记录项目的所有重要@符号，提供对重要文件、文件夹、代码和文档的快速访问。
 
-## Key Files
-| Symbol | Description | Relevance |
+## 关键文件
+| 符号 | 描述 | 相关性 |
 |--------|-------------|-----------|
-| `@Files:[PATH]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Files:[PATH]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Files:[PATH]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
+| `@Files:[路径]` | [描述] | [高/中/低] |
+| `@Files:[路径]` | [描述] | [高/中/低] |
+| `@Files:[路径]` | [描述] | [高/中/低] |
 
-## Key Folders
-| Symbol | Description | Relevance |
+## 关键文件夹
+| 符号 | 描述 | 相关性 |
 |--------|-------------|-----------|
-| `@Folders:[PATH]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Folders:[PATH]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Folders:[PATH]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
+| `@Folders:[路径]` | [描述] | [高/中/低] |
+| `@Folders:[路径]` | [描述] | [高/中/低] |
+| `@Folders:[路径]` | [描述] | [高/中/低] |
 
-## Key Code Symbols
-| Symbol | Description | Relevance |
+## 关键代码符号
+| 符号 | 描述 | 相关性 |
 |--------|-------------|-----------|
-| `@Code:[SYMBOL]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Code:[SYMBOL]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Code:[SYMBOL]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
+| `@Code:[符号]` | [描述] | [高/中/低] |
+| `@Code:[符号]` | [描述] | [高/中/低] |
+| `@Code:[符号]` | [描述] | [高/中/低] |
 
-## Documentation References
-| Symbol | Description | Relevance |
+## 文档引用
+| 符号 | 描述 | 相关性 |
 |--------|-------------|-----------|
-| `@Docs:[TOPIC]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Docs:[TOPIC]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Docs:[TOPIC]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
+| `@Docs:[主题]` | [描述] | [高/中/低] |
+| `@Docs:[主题]` | [描述] | [高/中/低] |
+| `@Docs:[主题]` | [描述] | [高/中/低] |
 
-## Web References
-| Symbol | Description | Relevance |
+## 网络引用
+| 符号 | 描述 | 相关性 |
 |--------|-------------|-----------|
-| `@Web:[QUERY]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Web:[QUERY]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Web:[QUERY]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
+| `@Web:[查询]` | [描述] | [高/中/低] |
+| `@Web:[查询]` | [描述] | [高/中/低] |
+| `@Web:[查询]` | [描述] | [高/中/低] |
 
-## Git References
-| Symbol | Description | Relevance |
+## Git引用
+| 符号 | 描述 | 相关性 |
 |--------|-------------|-----------|
-| `@Git:[REFERENCE]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Git:[REFERENCE]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
-| `@Git:[REFERENCE]` | [DESCRIPTION] | [HIGH/MEDIUM/LOW] |
+| `@Git:[引用]` | [描述] | [高/中/低] |
+| `@Git:[引用]` | [描述] | [高/中/低] |
+| `@Git:[引用]` | [描述] | [高/中/低] |
 
-## Feature-Specific Symbols
-### [FEATURE_1_NAME]
-- `@Files:[PATH]` - [DESCRIPTION]
-- `@Code:[SYMBOL]` - [DESCRIPTION]
-- `@Folders:[PATH]` - [DESCRIPTION]
+## 特定功能符号
+### [功能1名称]
+- `@Files:[路径]` - [描述]
+- `@Code:[符号]` - [描述]
+- `@Folders:[路径]` - [描述]
 
-### [FEATURE_2_NAME]
-- `@Files:[PATH]` - [DESCRIPTION]
-- `@Code:[SYMBOL]` - [DESCRIPTION]
-- `@Folders:[PATH]` - [DESCRIPTION]
+### [功能2名称]
+- `@Files:[路径]` - [描述]
+- `@Code:[符号]` - [描述]
+- `@Folders:[路径]` - [描述]
 
-## Performance Considerations
-- Large Files (handle with care):
-  - `@Files:[LARGE_FILE_1]` - Use `@Code:[SPECIFIC_SYMBOL]` instead
-  - `@Files:[LARGE_FILE_2]` - Use `@Code:[SPECIFIC_SYMBOL]` instead
+## 性能考虑
+- 大型文件（谨慎处理）：
+  - `@Files:[大型文件1]` - 使用`@Code:[特定符号]`代替
+  - `@Files:[大型文件2]` - 使用`@Code:[特定符号]`代替
 
-- Large Directories (use specific sub-directories):
-  - `@Folders:[LARGE_DIR_1]` - Use `@Folders:[SUB_DIR]` instead
-  - `@Folders:[LARGE_DIR_2]` - Use `@Folders:[SUB_DIR]` instead
+- 大型目录（使用特定子目录）：
+  - `@Folders:[大型目录1]` - 使用`@Folders:[子目录]`代替
+  - `@Folders:[大型目录2]` - 使用`@Folders:[子目录]`代替
 
-## Symbol Usage By Mode
-### RESEARCH Mode Symbols
-- `@Files:[KEY_FILE_1]` - Understanding system structure
-- `@Folders:[KEY_DIR_1]` - Exploring component organization
-- `@Code:[KEY_FUNCTION_1]` - Analyzing core functionality
+## 按模式划分的符号使用
+### RESEARCH模式符号
+- `@Files:[关键文件1]` - 了解系统结构
+- `@Folders:[关键目录1]` - 探索组件组织
+- `@Code:[关键函数1]` - 分析核心功能
 
-### INNOVATE Mode Symbols
-- `@Web:[KEY_SEARCH_1]` - Researching design patterns
-- `@Docs:[KEY_PATTERN_1]` - Reference for implementation approaches
-- `@Files:[SIMILAR_FEATURE]` - Example of similar functionality
+### INNOVATE模式符号
+- `@Web:[关键搜索1]` - 研究设计模式
+- `@Docs:[关键模式1]` - 实现方法参考
+- `@Files:[类似功能]` - 类似功能示例
 
-### PLAN Mode Symbols
-- `@Files:[TARGET_FILE_1]` - Implementation target
-- `@Code:[TARGET_FUNCTION_1]` - Function to modify
-- `@Folders:[NEW_COMPONENT_DIR]` - Location for new components
+### PLAN模式符号
+- `@Files:[目标文件1]` - 实现目标
+- `@Code:[目标函数1]` - 要修改的函数
+- `@Folders:[新组件目录]` - 新组件的位置
 
-### EXECUTE Mode Symbols
-- `@Files:[IMPLEMENTATION_FILE_1]` - Current implementation
-- `@Files:[TEST_FILE_1]` - Associated tests
-- `@Code:[IMPLEMENTING_FUNCTION]` - Function being implemented
+### EXECUTE模式符号
+- `@Files:[实现文件1]` - 当前实现
+- `@Files:[测试文件1]` - 相关测试
+- `@Code:[实现函数]` - 正在实现的函数
 
-### REVIEW Mode Symbols
-- `@Files:[REVIEW_FILE_1]` - File to review
-- `@Git:[RECENT_CHANGES]` - Recent implementation changes
-- `@Code:[REVIEWED_FUNCTION]` - Function to validate
+### REVIEW模式符号
+- `@Files:[审查文件1]` - 要审查的文件
+- `@Git:[最近更改]` - 最近的实现更改
+- `@Code:[已审查函数]` - 要验证的函数
 
-## Symbol Aliases
+## 符号别名
 - `@f:` = `@Files:`
 - `@d:` = `@Folders:`
 - `@c:` = `@Code:`
@@ -104,4 +104,4 @@ This registry documents all significant @ symbols for the project, providing qui
 
 ---
 
-*This registry documents all significant @ symbols for the project, providing quick access to important files, folders, code, and documentation.*
+*此注册表记录项目的所有重要@符号，提供对重要文件、文件夹、代码和文档的快速访问。* 

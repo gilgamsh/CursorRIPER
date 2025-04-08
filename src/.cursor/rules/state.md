@@ -1,5 +1,5 @@
 ---
-description: "CursorRIPER Framework - State Management"
+description: "CursorRIPER框架 - 状态管理"
 globs: 
 alwaysApply: true
 version: "1.0.3"
@@ -9,69 +9,69 @@ framework_component: "state"
 priority: "critical"
 scope: "always_load"
 ---
-<!-- Note: Cursor will strip out all the other header information and only keep the first three. -->
+<!-- 注意：Cursor会去掉其他所有头部信息，只保留前三项。 -->
 
-# CursorRIPER Framework - State Management
-# Version 1.0.3
+# CursorRIPER框架 - 状态管理
+# 版本 1.0.3
 
-## AI PROCESSING INSTRUCTIONS
-This file defines the current state of the project within the CursorRIPER Framework. As an AI assistant, you MUST:
-- Always load this file after core.mdc but before other components
-- Never modify state values without proper authorization via commands
-- Validate state transitions against allowed paths
-- Update this file when state changes occur
-- Keep all state values consistent with each other
+## AI处理指令
+此文件定义了CursorRIPER框架中项目的当前状态。作为AI助手，你必须：
+- 总是在加载core.mdc之后但在加载其他组件之前加载此文件
+- 没有通过命令的正式授权，绝不修改状态值
+- 根据允许的路径验证状态转换
+- 当状态发生变化时更新此文件
+- 保持所有状态值之间的一致性
 
-## CURRENT PROJECT STATE
+## 当前项目状态
 
 PROJECT_PHASE: "UNINITIATED"
-# Possible values: "UNINITIATED", "INITIALIZING", "DEVELOPMENT", "MAINTENANCE"
+# 可能的值："UNINITIATED"（未初始化）, "INITIALIZING"（初始化中）, "DEVELOPMENT"（开发中）, "MAINTENANCE"（维护中）
 
 RIPER_CURRENT_MODE: "NONE"
-# Possible values: "NONE", "RESEARCH", "INNOVATE", "PLAN", "EXECUTE", "REVIEW"
+# 可能的值："NONE"（无）, "RESEARCH"（研究）, "INNOVATE"（创新）, "PLAN"（计划）, "EXECUTE"（执行）, "REVIEW"（审查）
 
 START_PHASE_STATUS: "NOT_STARTED"
-# Possible values: "NOT_STARTED", "IN_PROGRESS", "COMPLETED", "ARCHIVED"
+# 可能的值："NOT_STARTED"（未开始）, "IN_PROGRESS"（进行中）, "COMPLETED"（已完成）, "ARCHIVED"（已归档）
 
 START_PHASE_STEP: 0
-# Possible values: 0-6 (0=Not started, 1=Requirements, 2=Technology, 3=Architecture, 4=Scaffolding, 5=Environment, 6=Memory Bank)
+# 可能的值：0-6（0=未开始，1=需求，2=技术，3=架构，4=脚手架，5=环境，6=记忆库）
 
 LAST_UPDATE: "2025-04-06T00:00:00Z"
-# ISO 8601 formatted timestamp of last state update
+# ISO 8601格式的上次状态更新时间戳
 
 INITIALIZATION_DATE: ""
-# When START phase was completed, empty if not completed
+# START阶段完成的时间，如果未完成则为空
 
 FRAMEWORK_VERSION: "1.0.3"
-# Current version of the framework
+# 框架的当前版本
 
-## @ SYMBOL STATE TRACKING
+## @符号状态跟踪
 
 SYMBOL_REGISTRY_CREATED: "NO"
-# Possible values: "NO", "INITIALIZED", "POPULATED", "OPTIMIZED"
+# 可能的值："NO"（否）, "INITIALIZED"（已初始化）, "POPULATED"（已填充）, "OPTIMIZED"（已优化）
 
 SYMBOL_DISCOVERY_STATUS: "NOT_STARTED"
-# Possible values: "NOT_STARTED", "IN_PROGRESS", "COMPLETED"
+# 可能的值："NOT_STARTED"（未开始）, "IN_PROGRESS"（进行中）, "COMPLETED"（已完成）
 
 LAST_SYMBOL_UPDATE: ""
-# ISO 8601 formatted timestamp of last symbol registry update
+# ISO 8601格式的上次符号注册表更新时间戳
 
-## STATE TRANSITION RULES
+## 状态转换规则
 
 ```mermaid
 stateDiagram-v2
     [*] --> UNINITIATED
     
     UNINITIATED --> INITIALIZING: /start
-    INITIALIZING --> DEVELOPMENT: START phase complete
-    DEVELOPMENT --> MAINTENANCE: User request
-    MAINTENANCE --> DEVELOPMENT: User request
+    INITIALIZING --> DEVELOPMENT: START阶段完成
+    DEVELOPMENT --> MAINTENANCE: 用户请求
+    MAINTENANCE --> DEVELOPMENT: 用户请求
     
     state INITIALIZING {
         [*] --> NOT_STARTED
-        NOT_STARTED --> IN_PROGRESS: Begin START
-        IN_PROGRESS --> COMPLETED: All steps finished
-        COMPLETED --> ARCHIVED: Enter DEVELOPMENT
+        NOT_STARTED --> IN_PROGRESS: 开始START
+        IN_PROGRESS --> COMPLETED: 所有步骤完成
+        COMPLETED --> ARCHIVED: 进入DEVELOPMENT
     }
     
     state "DEVELOPMENT/MAINTENANCE" as DM {
@@ -84,151 +84,151 @@ stateDiagram-v2
     }
 ```
 
-### Phase Transitions
+### 阶段转换
 - UNINITIATED → INITIALIZING
-  - Trigger: "/start" or "BEGIN START PHASE"
-  - Requirements: None
+  - 触发器："/start"或"BEGIN START PHASE"
+  - 要求：无
   
 - INITIALIZING → DEVELOPMENT
-  - Trigger: Automatic upon START phase completion
-  - Requirements: START_PHASE_STATUS = "COMPLETED"
+  - 触发器：START阶段完成后自动
+  - 要求：START_PHASE_STATUS = "COMPLETED"
   
 - DEVELOPMENT → MAINTENANCE
-  - Trigger: Manual transition by user
-  - Requirements: Explicit user request
+  - 触发器：用户手动转换
+  - 要求：明确的用户请求
   
 - MAINTENANCE → DEVELOPMENT
-  - Trigger: Manual transition by user
-  - Requirements: Explicit user request
+  - 触发器：用户手动转换
+  - 要求：明确的用户请求
 
-### Mode Transitions
-- Any mode → RESEARCH
-  - Trigger: "/research" or "ENTER RESEARCH MODE"
-  - Requirements: PROJECT_PHASE in ["DEVELOPMENT", "MAINTENANCE"]
+### 模式转换
+- 任何模式 → RESEARCH
+  - 触发器："/research"或"ENTER RESEARCH MODE"
+  - 要求：PROJECT_PHASE为["DEVELOPMENT", "MAINTENANCE"]之一
   
-- Any mode → INNOVATE
-  - Trigger: "/innovate" or "ENTER INNOVATE MODE"
-  - Requirements: PROJECT_PHASE in ["DEVELOPMENT", "MAINTENANCE"]
+- 任何模式 → INNOVATE
+  - 触发器："/innovate"或"ENTER INNOVATE MODE"
+  - 要求：PROJECT_PHASE为["DEVELOPMENT", "MAINTENANCE"]之一
   
-- Any mode → PLAN
-  - Trigger: "/plan" or "ENTER PLAN MODE"
-  - Requirements: PROJECT_PHASE in ["DEVELOPMENT", "MAINTENANCE"]
+- 任何模式 → PLAN
+  - 触发器："/plan"或"ENTER PLAN MODE"
+  - 要求：PROJECT_PHASE为["DEVELOPMENT", "MAINTENANCE"]之一
   
-- Any mode → EXECUTE
-  - Trigger: "/execute" or "ENTER EXECUTE MODE"
-  - Requirements: PROJECT_PHASE in ["DEVELOPMENT", "MAINTENANCE"]
+- 任何模式 → EXECUTE
+  - 触发器："/execute"或"ENTER EXECUTE MODE"
+  - 要求：PROJECT_PHASE为["DEVELOPMENT", "MAINTENANCE"]之一
   
-- Any mode → REVIEW
-  - Trigger: "/review" or "ENTER REVIEW MODE"
-  - Requirements: PROJECT_PHASE in ["DEVELOPMENT", "MAINTENANCE"]
+- 任何模式 → REVIEW
+  - 触发器："/review"或"ENTER REVIEW MODE"
+  - 要求：PROJECT_PHASE为["DEVELOPMENT", "MAINTENANCE"]之一
 
-### START Phase Status Transitions
+### START阶段状态转换
 - NOT_STARTED → IN_PROGRESS
-  - Trigger: "/start" or "BEGIN START PHASE"
-  - Requirements: PROJECT_PHASE = "UNINITIATED"
+  - 触发器："/start"或"BEGIN START PHASE"
+  - 要求：PROJECT_PHASE = "UNINITIATED"
   
 - IN_PROGRESS → COMPLETED
-  - Trigger: Completion of all START phase steps
-  - Requirements: START_PHASE_STEP = 6
+  - 触发器：完成所有START阶段步骤
+  - 要求：START_PHASE_STEP = 6
   
 - COMPLETED → ARCHIVED
-  - Trigger: Automatic after transition to DEVELOPMENT
-  - Requirements: PROJECT_PHASE = "DEVELOPMENT"
+  - 触发器：转换到DEVELOPMENT后自动
+  - 要求：PROJECT_PHASE = "DEVELOPMENT"
 
-### Symbol Registry State Transitions
+### 符号注册表状态转换
 - NO → INITIALIZED
-  - Trigger: Creation of @-symbol-registry.md file
-  - Requirements: PROJECT_PHASE in ["INITIALIZING", "DEVELOPMENT", "MAINTENANCE"]
+  - 触发器：创建@-symbol-registry.md文件
+  - 要求：PROJECT_PHASE为["INITIALIZING", "DEVELOPMENT", "MAINTENANCE"]之一
   
 - INITIALIZED → POPULATED
-  - Trigger: Documentation of at least 10 project symbols
-  - Requirements: SYMBOL_REGISTRY_CREATED = "INITIALIZED"
+  - 触发器：记录至少10个项目符号
+  - 要求：SYMBOL_REGISTRY_CREATED = "INITIALIZED"
   
 - POPULATED → OPTIMIZED
-  - Trigger: Addition of performance considerations to registry
-  - Requirements: SYMBOL_REGISTRY_CREATED = "POPULATED"
+  - 触发器：向注册表添加性能考虑因素
+  - 要求：SYMBOL_REGISTRY_CREATED = "POPULATED"
 
-### Symbol Discovery Status Transitions
+### 符号发现状态转换
 - NOT_STARTED → IN_PROGRESS
-  - Trigger: START phase step 6.1 completion or manual discovery start
-  - Requirements: PROJECT_PHASE in ["INITIALIZING", "DEVELOPMENT", "MAINTENANCE"]
+  - 触发器：START阶段步骤6.1完成或手动开始发现
+  - 要求：PROJECT_PHASE为["INITIALIZING", "DEVELOPMENT", "MAINTENANCE"]之一
   
 - IN_PROGRESS → COMPLETED
-  - Trigger: Completion of @ symbol discovery process
-  - Requirements: At least 10 symbols documented or manual completion
+  - 触发器：@符号发现过程完成
+  - 要求：至少记录10个符号或手动完成
 
-## STATE UPDATE PROCEDURES
+## 状态更新程序
 
-### Update Project Phase
-1. Validate transition is allowed
-2. Create backup of current state
-3. Update PROJECT_PHASE value
-4. Update LAST_UPDATE timestamp
-5. Perform any phase-specific initialization
+### 更新项目阶段
+1. 验证转换是否允许
+2. 创建当前状态的备份
+3. 更新PROJECT_PHASE值
+4. 更新LAST_UPDATE时间戳
+5. 执行任何特定于阶段的初始化
 
-### Update RIPER Mode
-1. Validate transition is allowed
-2. Update RIPER_CURRENT_MODE value
-3. Update LAST_UPDATE timestamp
-4. Update activeContext.md to reflect mode change
+### 更新RIPER模式
+1. 验证转换是否允许
+2. 更新RIPER_CURRENT_MODE值
+3. 更新LAST_UPDATE时间戳
+4. 更新activeContext.md以反映模式变化
 
-### Update START Phase Status
-1. Validate transition is allowed
-2. Update START_PHASE_STATUS value
-3. Update LAST_UPDATE timestamp
-4. If transitioning to COMPLETED, set INITIALIZATION_DATE
+### 更新START阶段状态
+1. 验证转换是否允许
+2. 更新START_PHASE_STATUS值
+3. 更新LAST_UPDATE时间戳
+4. 如果转换到COMPLETED，设置INITIALIZATION_DATE
 
-### Update START Phase Step
-1. Validate step increment is logical
-2. Update START_PHASE_STEP value
-3. Update LAST_UPDATE timestamp
-4. If reaching step 6, trigger completion process
+### 更新START阶段步骤
+1. 验证步骤增量是否合理
+2. 更新START_PHASE_STEP值
+3. 更新LAST_UPDATE时间戳
+4. 如果达到步骤6，触发完成过程
 
-### Update Symbol Registry State
-1. Validate transition is allowed
-2. Update SYMBOL_REGISTRY_CREATED value
-3. Update LAST_SYMBOL_UPDATE timestamp
-4. Update LAST_UPDATE timestamp
-5. If transitioning to POPULATED or OPTIMIZED, update activeContext.md
+### 更新符号注册表状态
+1. 验证转换是否允许
+2. 更新SYMBOL_REGISTRY_CREATED值
+3. 更新LAST_SYMBOL_UPDATE时间戳
+4. 更新LAST_UPDATE时间戳
+5. 如果转换到POPULATED或OPTIMIZED，更新activeContext.md
 
-### Update Symbol Discovery Status
-1. Validate transition is allowed
-2. Update SYMBOL_DISCOVERY_STATUS value
-3. Update LAST_SYMBOL_UPDATE timestamp
-4. Update LAST_UPDATE timestamp
-5. If transitioning to COMPLETED, update activeContext.md
+### 更新符号发现状态
+1. 验证转换是否允许
+2. 更新SYMBOL_DISCOVERY_STATUS值
+3. 更新LAST_SYMBOL_UPDATE时间戳
+4. 更新LAST_UPDATE时间戳
+5. 如果转换到COMPLETED，更新activeContext.md
 
-## AUTOMATIC STATE DETECTION
+## 自动状态检测
 
-When determining current project state:
-1. Check for existence of memory bank files
-2. If complete memory bank exists but STATE_PHASE is "UNINITIATED":
-   - Set PROJECT_PHASE to "DEVELOPMENT"
-   - Set START_PHASE_STATUS to "COMPLETED"
-   - Set START_PHASE_STEP to 6
-   - Set INITIALIZATION_DATE based on file timestamps
-3. If partial memory bank exists:
-   - Set PROJECT_PHASE to "INITIALIZING"
-   - Set START_PHASE_STATUS to "IN_PROGRESS"
-   - Determine START_PHASE_STEP based on existing files
-4. Check for existence of @-symbol-registry.md:
-   - If exists and contains >10 symbols, set SYMBOL_REGISTRY_CREATED to "POPULATED"
-   - If exists but contains <10 symbols, set SYMBOL_REGISTRY_CREATED to "INITIALIZED"
-   - If not exists, set SYMBOL_REGISTRY_CREATED to "NO"
-5. Determine SYMBOL_DISCOVERY_STATUS based on registry state and contents
+在确定当前项目状态时：
+1. 检查记忆库文件是否存在
+2. 如果完整的记忆库存在但STATE_PHASE为"UNINITIATED"：
+   - 将PROJECT_PHASE设置为"DEVELOPMENT"
+   - 将START_PHASE_STATUS设置为"COMPLETED"
+   - 将START_PHASE_STEP设置为6
+   - 根据文件时间戳设置INITIALIZATION_DATE
+3. 如果存在部分记忆库：
+   - 将PROJECT_PHASE设置为"INITIALIZING"
+   - 将START_PHASE_STATUS设置为"IN_PROGRESS"
+   - 根据现有文件确定START_PHASE_STEP
+4. 检查@-symbol-registry.md是否存在：
+   - 如果存在且包含>10个符号，将SYMBOL_REGISTRY_CREATED设置为"POPULATED"
+   - 如果存在但包含<10个符号，将SYMBOL_REGISTRY_CREATED设置为"INITIALIZED"
+   - 如果不存在，将SYMBOL_REGISTRY_CREATED设置为"NO"
+5. 根据注册表状态和内容确定SYMBOL_DISCOVERY_STATUS
 
-## RE-INITIALIZATION PROTECTION
+## 重新初始化保护
 
-If "/start" or "BEGIN START PHASE" is detected when PROJECT_PHASE is not "UNINITIATED":
-1. Warn user about re-initialization risks
-2. Require explicit confirmation: "CONFIRM RE-INITIALIZATION"
-3. If confirmed:
-   - Create backup of current memory bank
-   - Reset state to PROJECT_PHASE = "INITIALIZING"
-   - Reset START_PHASE_STATUS to "IN_PROGRESS"
-   - Reset START_PHASE_STEP to 1
-   - Preserve SYMBOL_REGISTRY_CREATED and SYMBOL_DISCOVERY_STATUS if they exist
+如果在PROJECT_PHASE不是"UNINITIATED"时检测到"/start"或"BEGIN START PHASE"：
+1. 警告用户关于重新初始化的风险
+2. 要求明确确认："CONFIRM RE-INITIALIZATION"
+3. 如果确认：
+   - 创建当前记忆库的备份
+   - 重置状态为PROJECT_PHASE = "INITIALIZING"
+   - 重置START_PHASE_STATUS为"IN_PROGRESS"
+   - 重置START_PHASE_STEP为1
+   - 如果存在，保留SYMBOL_REGISTRY_CREATED和SYMBOL_DISCOVERY_STATUS
 
 ---
 
-*This file automatically tracks the current state of the project. It should never be edited manually.*
+*此文件自动跟踪项目的当前状态。不应手动编辑。* 

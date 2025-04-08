@@ -1,43 +1,43 @@
-# Technical Context: [PROJECT_NAME]
-*Version: 1.0*
-*Created: [CURRENT_DATE]*
-*Last Updated: [CURRENT_DATE]*
+# 技术背景：[项目名称]
+*版本：1.0*
+*创建日期：[当前日期]*
+*最后更新：[当前日期]*
 
-## Technology Stack
-- Frontend: [FRONTEND_TECHNOLOGIES]
-- Backend: [BACKEND_TECHNOLOGIES]
-- Database: [DATABASE_TECHNOLOGIES]
-- Infrastructure: [INFRASTRUCTURE_TECHNOLOGIES]
+## 技术栈
+- 前端：[前端技术]
+- 后端：[后端技术]
+- 数据库：[数据库技术]
+- 基础设施：[基础设施技术]
 
-## Development Environment Setup
-[Instructions for setting up the development environment]
+## 开发环境设置
+[设置开发环境的说明]
 
 ```bash
-# Example setup commands
+# 示例设置命令
 npm install
 npm run dev
 ```
 
-## Dependencies
-- [DEPENDENCY_1]: [VERSION] - [PURPOSE]
-- [DEPENDENCY_2]: [VERSION] - [PURPOSE]
-- [DEPENDENCY_3]: [VERSION] - [PURPOSE]
+## 依赖项
+- [依赖项_1]：[版本] - [目的]
+- [依赖项_2]：[版本] - [目的]
+- [依赖项_3]：[版本] - [目的]
 
-## Technical Constraints
-- [CONSTRAINT_1]
-- [CONSTRAINT_2]
-- [CONSTRAINT_3]
+## 技术约束
+- [约束_1]
+- [约束_2]
+- [约束_3]
 
-## Build and Deployment
-- Build Process: [BUILD_PROCESS]
-- Deployment Procedure: [DEPLOYMENT_PROCEDURE]
-- CI/CD: [CI_CD_SETUP]
+## 构建和部署
+- 构建过程：[构建过程]
+- 部署程序：[部署程序]
+- CI/CD：[CI_CD设置]
 
-## Testing Approach
-- Unit Testing: [UNIT_TESTING_APPROACH]
-- Integration Testing: [INTEGRATION_TESTING_APPROACH]
-- E2E Testing: [E2E_TESTING_APPROACH]
+## 测试方法
+- 单元测试：[单元测试方法]
+- 集成测试：[集成测试方法]
+- 端到端测试：[端到端测试方法]
 
 ---
 
-*This document describes the technologies used in the project and how they're configured.*
+*此文档描述了项目中使用的技术及其配置方式。* 

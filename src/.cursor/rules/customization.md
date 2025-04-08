@@ -1,5 +1,5 @@
 ---
-description: "CursorRIPER Framework - Customization"
+description: "CursorRIPER框架 - 自定义"
 globs: 
 alwaysApply: false
 version: "1.0.2"
@@ -9,87 +9,87 @@ framework_component: "customization"
 priority: "medium"
 scope: "optional"
 ---
-<!-- Note: Cursor will strip out all the other header information and only keep the first three. -->
-# CursorRIPER Framework - Customization
-# Version 1.0.2
+<!-- 注意：Cursor会去掉其他所有头部信息，只保留前三项。 -->
+# CursorRIPER框架 - 自定义
+# 版本 1.0.2
 
-## AI PROCESSING INSTRUCTIONS
-This file contains user-defined customizations for the CursorRIPER Framework. As an AI assistant, you MUST:
-- Load this file after core framework components if it exists
-- Apply these customizations to override default framework behavior
-- Never modify this file unless explicitly requested by the user
-- Acknowledge the active customizations in your first response of each session
+## AI处理指令
+此文件包含CursorRIPER框架的用户定义自定义设置。作为AI助手，你必须：
+- 在核心框架组件之后加载此文件（如果存在）
+- 应用这些自定义设置以覆盖默认框架行为
+- 除非用户明确要求，否则绝不修改此文件
+- 在每个会话的第一个回复中确认活跃的自定义设置
 
-## USER PREFERENCES
+## 用户偏好
 
-### Response Style
+### 响应风格
 RESPONSE_VERBOSITY: "BALANCED"
-# Possible values: "CONCISE", "BALANCED", "DETAILED"
-# Controls the level of detail in AI responses
+# 可能的值："CONCISE"（简洁）, "BALANCED"（平衡）, "DETAILED"（详细）
+# 控制AI响应中的细节级别
 
 CODE_STYLE_PREFERENCES: ""
-# Specify coding style preferences (indentation, naming conventions, etc.)
+# 指定代码风格偏好（缩进、命名约定等）
 
 EXPLANATION_LEVEL: "MEDIUM"
-# Possible values: "MINIMAL", "MEDIUM", "COMPREHENSIVE"
-# Controls how much explanation is provided with code
+# 可能的值："MINIMAL"（最小）, "MEDIUM"（中等）, "COMPREHENSIVE"（全面）
+# 控制代码提供的解释程度
 
-### Mode Behavior
+### 模式行为
 SUGGEST_MODE_TRANSITIONS: true
-# If true, AI can suggest when a mode transition might be appropriate
+# 如果为true，AI可以在适当时建议模式转换
 
 AUTO_MODE_TRANSITION: false
-# If true, AI can automatically transition between modes (except to EXECUTE)
-# EXECUTE mode always requires explicit user authorization
+# 如果为true，AI可以在模式之间自动转换（除了转到EXECUTE）
+# EXECUTE模式始终需要明确的用户授权
 
 PLAN_QUESTION_COUNT: 5
-# Number of clarifying questions to ask in PLAN mode
+# 在PLAN模式下要问的澄清问题数量
 
-### Memory Management
+### 记忆管理
 AUTO_UPDATE_MEMORY: true
-# If true, AI will automatically update memory files after significant changes
+# 如果为true，AI会在重大变更后自动更新记忆文件
 
 MEMORY_UPDATE_FREQUENCY: "AFTER_COMPLETION"
-# Possible values: "AFTER_EVERY_RESPONSE", "AFTER_COMPLETION", "MANUAL_ONLY"
-# Controls when memory files are updated
+# 可能的值："AFTER_EVERY_RESPONSE"（每次响应后）, "AFTER_COMPLETION"（完成后）, "MANUAL_ONLY"（仅手动）
+# 控制何时更新记忆文件
 
 REQUIRED_MEMORY_FILES: ["projectbrief.md", "activeContext.md", "progress.md"]
-# List of memory files that must exist for the framework to function
+# 框架正常运作所必需的记忆文件列表
 
-### Archive Behavior
+### 归档行为
 AUTO_ARCHIVE_START_PHASE: true
-# If true, START phase will be automatically archived upon completion
+# 如果为true，START阶段将在完成后自动归档
 
 BACKUP_FREQUENCY: "DAILY"
-# Possible values: "NEVER", "DAILY", "WEEKLY", "BEFORE_CHANGES"
-# Controls how often memory bank backups are created
+# 可能的值："NEVER"（从不）, "DAILY"（每日）, "WEEKLY"（每周）, "BEFORE_CHANGES"（变更前）
+# 控制记忆库备份的频率
 
 KEEP_BACKUP_COUNT: 5
-# Number of backup sets to retain before deleting oldest
+# 删除最旧备份前保留的备份集数量
 
-## @ SYMBOL CUSTOMIZATION
+## @符号自定义
 
-### Symbol Usage Preferences
+### 符号使用偏好
 AUTO_SUGGEST_SYMBOLS: true
-# If true, AI will suggest relevant @ symbols when appropriate
+# 如果为true，AI会在适当时建议相关@符号
 
 SYMBOL_SUGGESTION_FREQUENCY: "MEDIUM"
-# Possible values: "LOW", "MEDIUM", "HIGH"
-# Controls how often @ symbol suggestions are offered
+# 可能的值："LOW"（低）, "MEDIUM"（中）, "HIGH"（高）
+# 控制提供@符号建议的频率
 
 MAINTAIN_SYMBOL_REGISTRY: true
-# If true, AI will automatically update the @ symbol registry
+# 如果为true，AI会自动更新@符号注册表
 
-### Symbol Context Preferences
+### 符号上下文偏好
 DEFAULT_SYMBOL_DEPTH: "FILE"
-# Possible values: "FILE", "DIRECTORY", "REPOSITORY"
-# Controls default context depth for @ symbols
+# 可能的值："FILE"（文件）, "DIRECTORY"（目录）, "REPOSITORY"（仓库）
+# 控制@符号的默认上下文深度
 
 CODE_SYMBOL_PREFERENCE: "FUNCTION"
-# Possible values: "FUNCTION", "CLASS", "VARIABLE", "ALL"
-# Controls which code symbols are prioritized in suggestions
+# 可能的值："FUNCTION"（函数）, "CLASS"（类）, "VARIABLE"（变量）, "ALL"（全部）
+# 控制在建议中优先考虑哪些代码符号
 
-### Symbol Template Aliases
+### 符号模板别名
 SYMBOL_ALIASES: {
   "@f:": "@Files:",
   "@d:": "@Folders:",
@@ -98,11 +98,11 @@ SYMBOL_ALIASES: {
   "@w:": "@Web:",
   "@g:": "@Git:"
 }
-# Custom short aliases for @ symbols
+# @符号的自定义短别名
 
-## ADVANCED CUSTOMIZATION
+## 高级自定义
 
-### Command Aliases
+### 命令别名
 CUSTOM_COMMANDS: {
   "/r": "/research",
   "/i": "/innovate",
@@ -110,61 +110,61 @@ CUSTOM_COMMANDS: {
   "/e": "/execute",
   "/rev": "/review"
 }
-# Custom command shortcuts for mode transitions
+# 模式转换的自定义命令快捷方式
 
-### Mode Extensions
+### 模式扩展
 RESEARCH_MODE_EXTENSIONS: []
-# Additional behaviors for RESEARCH mode
+# RESEARCH模式的附加行为
 
 INNOVATE_MODE_EXTENSIONS: []
-# Additional behaviors for INNOVATE mode
+# INNOVATE模式的附加行为
 
 PLAN_MODE_EXTENSIONS: []
-# Additional behaviors for PLAN mode
+# PLAN模式的附加行为
 
 EXECUTE_MODE_EXTENSIONS: []
-# Additional behaviors for EXECUTE mode
+# EXECUTE模式的附加行为
 
 REVIEW_MODE_EXTENSIONS: []
-# Additional behaviors for REVIEW mode
+# REVIEW模式的附加行为
 
-### Framework Extensions
+### 框架扩展
 CUSTOM_PHASES: []
-# Additional project phases beyond standard ones
+# 标准阶段以外的附加项目阶段
 
 CUSTOM_WORKFLOWS: []
-# Custom workflows for specific project types
+# 特定项目类型的自定义工作流
 
-## USER DOCUMENTATION PREFERENCES
+## 用户文档偏好
 
-### Documentation Format
+### 文档格式
 DOCUMENTATION_STYLE: "MARKDOWN"
-# Format for generated documentation
+# 生成文档的格式
 
 INCLUDE_CODE_COMMENTS: true
-# Whether to include detailed comments in generated code
+# 是否在生成的代码中包含详细注释
 
 CODE_BLOCK_LANGUAGE_TAGS: true
-# Whether to include language tags in code blocks
+# 代码块中是否包含语言标签
 
-### AI Output Format
+### AI输出格式
 MODE_DECLARATION_FORMAT: "[MODE: {mode}]"
-# Format string for mode declarations
+# 模式声明的格式字符串
 
 PROGRESS_INDICATOR_FORMAT: "[{current_step}/{total_steps}]"
-# Format for progress indicators in responses
+# 响应中进度指示器的格式
 
-## CUSTOM PROJECT STRUCTURE
+## 自定义项目结构
 
 PROJECT_TYPE: "DEFAULT"
-# Identifies the type of project for specialized handling
+# 识别项目类型以进行专门处理
 
 CUSTOM_FOLDER_STRUCTURE: {}
-# Custom folder structure definitions for project scaffolding
+# 项目脚手架的自定义文件夹结构定义
 
 TECHNOLOGY_PRESETS: {}
-# Predefined technology stacks for quick selection
+# 预定义的技术栈，用于快速选择
 
 ---
 
-*This file contains user-defined customizations for the CursorRIPER Framework. Edit these settings to adjust framework behavior to your preferences.*
+*此文件包含CursorRIPER框架的用户定义自定义设置。编辑这些设置以根据您的偏好调整框架行为。* 

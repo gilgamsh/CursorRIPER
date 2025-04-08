@@ -1,48 +1,48 @@
-# System Patterns: [PROJECT_NAME]
-*Version: 1.0*
-*Created: [CURRENT_DATE]*
-*Last Updated: [CURRENT_DATE]*
+# 系统模式：[项目名称]
+*版本：1.0*
+*创建日期：[当前日期]*
+*最后更新：[当前日期]*
 
-## Architecture Overview
-[High-level description of the system architecture]
+## 架构概述
+[系统架构的高级描述]
 
 ```mermaid
 flowchart TD
-    A[Component A] --> B[Component B]
-    A --> C[Component C]
-    B --> D[Component D]
+    A[组件A] --> B[组件B]
+    A --> C[组件C]
+    B --> D[组件D]
     C --> D
 ```
 
-## Key Components
-- [COMPONENT_1]: [PURPOSE]
-- [COMPONENT_2]: [PURPOSE]
-- [COMPONENT_3]: [PURPOSE]
+## 关键组件
+- [组件_1]：[目的]
+- [组件_2]：[目的]
+- [组件_3]：[目的]
 
-## Design Patterns in Use
-- [PATTERN_1]: [USAGE_CONTEXT]
-- [PATTERN_2]: [USAGE_CONTEXT]
-- [PATTERN_3]: [USAGE_CONTEXT]
+## 使用的设计模式
+- [模式_1]：[使用上下文]
+- [模式_2]：[使用上下文]
+- [模式_3]：[使用上下文]
 
-## Data Flow
-[Description or diagram of how data flows through the system]
+## 数据流
+[数据如何在系统中流动的描述或图表]
 
 ```mermaid
 flowchart LR
-    User[User] --> FE[Frontend]
-    FE --> API[API Layer]
-    API --> DB[(Database)]
-    API --> ES[External Services]
+    User[用户] --> FE[前端]
+    FE --> API[API层]
+    API --> DB[(数据库)]
+    API --> ES[外部服务]
 ```
 
-## Key Technical Decisions
-- [DECISION_1]: [RATIONALE]
-- [DECISION_2]: [RATIONALE]
-- [DECISION_3]: [RATIONALE]
+## 关键技术决策
+- [决策_1]：[理由]
+- [决策_2]：[理由]
+- [决策_3]：[理由]
 
-## Component Relationships
-[Description of how components interact with each other]
+## 组件关系
+[组件之间如何相互作用的描述]
 
 ---
 
-*This document captures the system architecture and design patterns used in the project.*
+*此文档捕获了项目中使用的系统架构和设计模式。* 

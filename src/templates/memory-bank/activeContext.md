@@ -1,38 +1,38 @@
-# Active Context: [PROJECT_NAME]
-*Version: 1.0*
-*Created: [CURRENT_DATE]*
-*Last Updated: [CURRENT_DATE]*
-*Current RIPER Mode: [MODE_NAME]*
+# 活动上下文：[项目名称]
+*版本：1.0*
+*创建日期：[当前日期]*
+*最后更新：[当前日期]*
+*当前RIPER模式：[模式名称]*
 
-## Current Focus
-[Description of what we're currently working on]
+## 当前焦点
+[我们目前正在做什么的描述]
 
-## Recent Changes
-- [CHANGE_1]: [DATE] - [DESCRIPTION]
-- [CHANGE_2]: [DATE] - [DESCRIPTION]
-- [CHANGE_3]: [DATE] - [DESCRIPTION]
+## 最近变更
+- [变更_1]：[日期] - [描述]
+- [变更_2]：[日期] - [描述]
+- [变更_3]：[日期] - [描述]
 
-## Active Decisions
-- [DECISION_1]: [STATUS] - [DESCRIPTION]
-- [DECISION_2]: [STATUS] - [DESCRIPTION]
-- [DECISION_3]: [STATUS] - [DESCRIPTION]
+## 活动决策
+- [决策_1]：[状态] - [描述]
+- [决策_2]：[状态] - [描述]
+- [决策_3]：[状态] - [描述]
 
-## Next Steps
-1. [NEXT_STEP_1]
-2. [NEXT_STEP_2]
-3. [NEXT_STEP_3]
+## 下一步
+1. [下一步_1]
+2. [下一步_2]
+3. [下一步_3]
 
-## Current Challenges
-- [CHALLENGE_1]: [DESCRIPTION]
-- [CHALLENGE_2]: [DESCRIPTION]
-- [CHALLENGE_3]: [DESCRIPTION]
+## 当前挑战
+- [挑战_1]：[描述]
+- [挑战_2]：[描述]
+- [挑战_3]：[描述]
 
-## Implementation Progress
-- [✓] [COMPLETED_TASK_1]
-- [✓] [COMPLETED_TASK_2]
-- [ ] [PENDING_TASK_1]
-- [ ] [PENDING_TASK_2]
+## 实施进度
+- [✓] [已完成任务_1]
+- [✓] [已完成任务_2]
+- [ ] [待处理任务_1]
+- [ ] [待处理任务_2]
 
 ---
 
-*This document captures the current state of work and immediate next steps.*
+*此文档捕获当前工作状态和即时下一步。* 

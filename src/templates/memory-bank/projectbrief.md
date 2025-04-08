@@ -1,39 +1,39 @@
-# Project Brief: [PROJECT_NAME]
-*Version: 1.0*
-*Created: [CURRENT_DATE]*
-*Last Updated: [CURRENT_DATE]*
+# 项目简介：[项目名称]
+*版本：1.0*
+*创建日期：[当前日期]*
+*最后更新：[当前日期]*
 
-## Project Overview
-[Brief description of the project, its purpose, and main goals]
+## 项目概述
+[项目的简要描述，其目的和主要目标]
 
-## Core Requirements
-- [REQUIREMENT_1]
-- [REQUIREMENT_2]
-- [REQUIREMENT_3]
+## 核心需求
+- [需求_1]
+- [需求_2]
+- [需求_3]
 
-## Success Criteria
-- [CRITERION_1]
-- [CRITERION_2]
-- [CRITERION_3]
+## 成功标准
+- [标准_1]
+- [标准_2]
+- [标准_3]
 
-## Scope
-### In Scope
-- [IN_SCOPE_ITEM_1]
-- [IN_SCOPE_ITEM_2]
+## 范围
+### 范围内
+- [范围内项目_1]
+- [范围内项目_2]
 
-### Out of Scope
-- [OUT_OF_SCOPE_ITEM_1]
-- [OUT_OF_SCOPE_ITEM_2]
+### 范围外
+- [范围外项目_1]
+- [范围外项目_2]
 
-## Timeline
-- [MILESTONE_1]: [DATE]
-- [MILESTONE_2]: [DATE]
-- [MILESTONE_3]: [DATE]
+## 时间线
+- [里程碑_1]：[日期]
+- [里程碑_2]：[日期]
+- [里程碑_3]：[日期]
 
-## Stakeholders
-- [STAKEHOLDER_1]: [ROLE]
-- [STAKEHOLDER_2]: [ROLE]
+## 利益相关者
+- [利益相关者_1]：[角色]
+- [利益相关者_2]：[角色]
 
 ---
 
-*This document serves as the foundation for the project and informs all other memory files.*
+*此文档作为项目的基础，为所有其他记忆文件提供信息。* 
