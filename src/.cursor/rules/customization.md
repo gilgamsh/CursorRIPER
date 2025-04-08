@@ -1,7 +1,7 @@
 ---
 description: "CursorRIPER框架 - 自定义"
 globs: 
-alwaysApply: false
+alwaysApply: true
 version: "1.0.2"
 date_created: "2025-04-05"
 last_updated: "2025-04-06"
@@ -108,7 +108,7 @@ CUSTOM_COMMANDS: {
   "/i": "/innovate",
   "/p": "/plan",
   "/e": "/execute",
-  "/rev": "/review"
+  "/rv": "/review"
 }
 # 模式转换的自定义命令快捷方式
 
